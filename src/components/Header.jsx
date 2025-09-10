@@ -20,8 +20,8 @@ export default function Header({ setShowDeveloper }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-4">
-          <div className="w-20 h-20 rounded-full bg-indigo-50 flex items-center justify-center">
-            <img src="/assets/istockphoto-1172893099-612x612.jpg" alt="logo" className="w-18 h-18 object-contain" />
+          <div className="w-12 h-12 rounded-full bg-indigo-50 flex items-center justify-center">
+            <img src="/assets/istockphoto-1172893099-612x612.jpg" alt="logo" className="w-12 h-12 object-contain" />
           </div>
           <div className="leading-tight">
             <div className="text-lg sm:text-xl font-bold tracking-wide text-gray-900">PATIDAR</div>

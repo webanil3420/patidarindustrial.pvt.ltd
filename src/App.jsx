@@ -16,6 +16,7 @@ import FloatingCall from './components/FloatingCall'
 import ContactForm from './components/ContactForm'
 import CommentBox from './components/CommentBox'
 import DeveloperPage from './components/DevloperPage'
+import EditorInChief from './components/EditorInChief'
 
 
 export default function App() {
@@ -51,6 +52,7 @@ export default function App() {
           <FAQ />
           <ContactForm />
           <CommentBox />
+          <EditorInChief />
           <News />
         </main>
       )}
