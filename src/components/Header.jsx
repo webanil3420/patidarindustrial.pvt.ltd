@@ -38,7 +38,6 @@ export default function Header({ setShowDeveloper }) {
           <a href="#gallery" className="text-black hover:text-indigo-600">Gallery</a>
           <a href="#clients" className="text-black hover:text-indigo-600">Clients</a>
           <a href="#contact" className="text-black hover:text-indigo-600">Contact</a>
-          <button onClick={() => setShowDeveloper(true)} className="text-black hover:text-indigo-600">Developer</button>
           <a href="#contactform" className="ml-3 px-4 py-2 rounded bg-gradient-to-r from-indigo-600 to-green-500 text-white text-sm shadow">
             Enquire
           </a>
@@ -65,7 +64,6 @@ export default function Header({ setShowDeveloper }) {
             <a href="#gallery" className="text-black text-base" onClick={() => setOpen(false)}>Gallery</a>
             <a href="#clients" className="text-black text-base" onClick={() => setOpen(false)}>Clients</a>
             <a href="#contact" className="text-black text-base" onClick={() => setOpen(false)}>Contact</a>
-            <button onClick={() => { setShowDeveloper(true); setOpen(false) }} className="text-black text-base">Developer</button>
             <a href="#contactform" className="mt-2 px-4 py-2 bg-gradient-to-r from-indigo-600 to-green-500 text-white rounded text-center" onClick={() => setOpen(false)}>
               Enquire
             </a>

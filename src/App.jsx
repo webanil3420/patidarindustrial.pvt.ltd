@@ -17,17 +17,18 @@ import ContactForm from './components/ContactForm'
 import CommentBox from './components/CommentBox'
 import DeveloperPage from './components/DevloperPage'
 
+
 export default function App() {
   const [showDeveloper, setShowDeveloper] = useState(false)
 
-  useEffect(()=>{
-    const obs = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting) e.target.classList.add('show')
+  useEffect(() => {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) e.target.classList.add('show')
       })
-    }, {threshold: 0.15})
-    document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el))
-  },[])
+    }, { threshold: 0.15 })
+    document.querySelectorAll('.fade-up').forEach((el) => obs.observe(el))
+  }, [])
 
   return (
     <div className="font-sans antialiased text-gray-800">
@@ -54,7 +55,8 @@ export default function App() {
         </main>
       )}
 
-      <Footer />
+      {/* Pass setShowDeveloper to Footer so Developer button works */}
+      <Footer setShowDeveloper={setShowDeveloper} />
       <FloatingCall />
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
-export default function Footer(){
+export default function Footer({ setShowDeveloper }) {
   return (
     <footer className="footer-dark border-t border-white/10 mt-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 grid md:grid-cols-3 gap-6">
@@ -42,6 +42,14 @@ export default function Footer(){
               <FaLinkedinIn size={20} />
             </a>
           </div>
+
+          {/* Developer Button */}
+          <button
+            onClick={() => setShowDeveloper(true)}
+            className="mt-4 w-full bg-black text-white py-2 rounded text-sm hover:bg-gray-800 transition"
+          >
+            Developer
+          </button>
         </div>
       </div>
 
