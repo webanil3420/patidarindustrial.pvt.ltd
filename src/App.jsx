@@ -47,7 +47,7 @@ export default function App() {
           <Counters />
           <Projects />
           <Testimonials />
-          <Clients />
+          {/* <Clients /> */}
           <FAQ />
           <ContactForm />
           <CommentBox />
