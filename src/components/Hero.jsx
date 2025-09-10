@@ -3,16 +3,17 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="w-full h-screen relative overflow-hidden">
+    <section className="w-full h-screen relative overflow-revert">
       {/* Video Background */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/assets/India's Renewable Energy Sector (1 MIN).mp4" 
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
+     <video
+  className="absolute top-0 left-0 w-full h-full object-cover"
+  src="/assets/videoplayback.mp4" 
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/45"></div>
