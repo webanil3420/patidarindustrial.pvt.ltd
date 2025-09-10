@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom animations */
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: floaty 3s ease-in-out infinite;
+}
+
+.fade-up {
+  transform: translateY(12px);
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+.fade-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* call button */
+.call-btn {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 60;
+  background: linear-gradient(135deg,#ff7a18,#af002d);
+  color: white;
+  border-radius: 999px;
+  padding: 14px 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+
+/* small utility */
+@keyframes pulseShadow {
+  0% { box-shadow: 0 6px 12px rgba(175,0,45,0.25); transform: translateY(0); }
+  50% { box-shadow: 0 14px 30px rgba(175,0,45,0.35); transform: translateY(-4px); }
+  100% { box-shadow: 0 6px 12px rgba(175,0,45,0.25); transform: translateY(0); }
+}
+.floating { animation: floaty 3s ease-in-out infinite; }
+.call-btn { animation: pulseShadow 2.8s infinite; }
+
+@media (max-width: 768px){
+  .call-btn { left: 12px; bottom: 12px; padding: 12px 14px; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee { display:flex; gap:2rem; animation: marquee 18s linear infinite; }
+
+
+/* THEME VARIABLES */
+:root{
+  --primary-1: #4f46e5; /* indigo-600 */
+  --primary-2: #7c3aed; /* violet-600 */
+  --accent: #06b6d4;   /* teal-400 */
+  --muted: #6b7280;    /* gray-500 */
+}
+
+/* prevent horizontal scroll */
+html,body,#root{overflow-x:hidden;}
+
+/* subtle section backgrounds */
+.section-bg { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0)); }
+/* CTA glow */
+.cta-gradient { background: linear-gradient(90deg, var(--primary-1), var(--primary-2)); }
+.cta-glow { box-shadow: 0 8px 30px rgba(124,58,237,0.18); }
+
+/* tighter section spacing utility */
+.section-tight{ padding-top:2rem; padding-bottom:2rem; }
+
+/* smoother image rounding */
+.img-smooth{ border-radius:0.75rem; object-fit:cover; }
+
+/* clients mobile scroll snap */
+.clients-scroll { overflow-x:auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; display:flex; gap:1rem; padding-bottom:0.5rem; }
+.clients-scroll > div { scroll-snap-align: center; flex: 0 0 auto; }
+
+/* improved marquee only for md and above */
+@media (min-width: 768px){
+  .animate-marquee { display:flex; gap:2rem; animation: marquee 18s linear infinite; }
+}
+
+/* reduce gap for various sections when using 'compact' */
+.compact .grid, .compact .space-y-4 { gap:0.75rem; margin-top:0; margin-bottom:0; }
+
+/* gallery button style */
+.btn-ghost {
+  background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.06);
+  padding:0.5rem 0.75rem;
+  border-radius:0.5rem;
+}
+
+/* small utility for subtle card hover */
+.card-hover { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.card-hover:hover { transform: translateY(-6px) scale(1.01); box-shadow: 0 18px 40px rgba(79,70,229,0.12); }
+
+/* ensure body font and background */
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0f172a; }
+main { background: transparent; }
+.section-card { background: #ffffff; border-radius: 12px; padding: 1rem; box-shadow: 0 6px 18px rgba(15,23,42,0.06); }
+
+
+/* === Custom additions for background + readability === */
+:root { --site-bg-url: url('/assets/solar-bg.jpg'); }
+
+/* Background image with subtle dark overlay so text remains readable */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), var(--site-bg-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(1.05) brightness(0.98);
+}
+
+/* Utility: strong black text shadow for any text placed on top of images */
+.text-shadow,
+.text-shadow * {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+/* Lighter variant if needed */
+.text-shadow-soft { text-shadow: 0 1px 3px rgba(0,0,0,0.55); }
+
+/* Footer colors override */
+.footer-dark { background:#000; color:#fff; }
+.footer-dark a { color:#cbd5ff; }
+.footer-dark a:hover { color:#ffffff; text-decoration: underline; }
+
+/* Header sizing + improved mobile menu */
+.header-lg .logo-text { font-size: 1.4rem; font-weight: 800; }
+@media (min-width: 768px){
+  .header-lg .nav-link { font-size: 1.05rem; }
+  .header-lg .logo-text { font-size: 1.75rem; }
+}
+@media (max-width: 767px){
+  #mobile-menu { backdrop-filter: blur(6px); }
+  .mobile-link { font-size: 1.125rem; padding-top:0.5rem; padding-bottom:0.5rem; }
+}
+
+/* Styled upload button */
+.input-hidden { display:none; }
+.upload-btn {
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.65rem 1rem; border-radius:9999px;
+  border:1px solid rgba(255,255,255,0.25);
+  background: linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.35));
+  color:#fff; font-weight:600; letter-spacing:.2px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+.upload-btn:hover { transform: translateY(-1px); }
+
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    color: #FFFFFF !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+h3{
+      color: #FFFFFF !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+h4{
+   color: #30312f !important;
+}
+
+/* Improve heading color & readability */
+h1, h5, h6 {
+  color: #000000 !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Body text contrast */
+span, label {
+  color: #FFFFFF !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+a{
+  color: #000;
+}
+p{
+  color: #000;
+}
+
+
+span{
+  color: #000 !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+
+
+
+/* Reduce component section spacing */
+section {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
