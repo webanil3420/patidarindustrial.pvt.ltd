@@ -24,14 +24,14 @@ export default function Gallery() {
   return (
     <section id="gallery" className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
       <h3 className="text-3xl font-bold mb-4">Gallery</h3>
-      <p className="text-gray-600 mb-6">
+      <p className="text-white mb-6">
         Upload photos from site visits or projects — they will show instantly in the gallery preview (client-side only).
       </p>
 
       <div className="mb-4 flex flex-col sm:flex-row gap-3 items-start sm:items-center">
         <label htmlFor="gallery-upload" className="upload-btn cursor-pointer px-4 py-2 bg-blue-600 text-white rounded">Upload Files</label>
         <input id="gallery-upload" type="file" multiple onChange={handleUpload} className="hidden" />
-        <span className="text-sm text-gray-500">Tip: Tap/click any image to view larger.</span>
+        <p className="text-sm text-white">Tip: Tap/click any image to view larger.</p>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -47,7 +47,6 @@ export default function Gallery() {
               className="w-full h-48 sm:h-44 object-cover"
               onClick={() => setActive(src)}
             />
-            {/* Overlay with buttons */}
             <div className="absolute inset-0 bg-black/30 flex items-end justify-between opacity-100 sm:opacity-0 hover:opacity-100 transition p-2 sm:p-3">
               <button
                 className="bg-white/90 text-black text-xs sm:text-sm px-2 py-1 rounded"

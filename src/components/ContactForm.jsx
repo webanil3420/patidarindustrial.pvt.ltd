@@ -23,7 +23,7 @@ export default function ContactForm(){
           <button type="submit" className="px-4 py-2 bg-green-600 text-white rounded">Send via WhatsApp</button>
           <a href={`mailto:patidar041214@gmail.com?subject=${encodeURIComponent('Website Inquiry from '+(name||'Guest'))}&body=${encodeURIComponent(msg)}`} className="px-4 py-2 bg-indigo-600 text-white rounded">Send Email</a>
         </div>
-        <p className="text-sm text-gray-500">By submitting you agree we may contact you on WhatsApp / Email.</p>
+        <p className="text-sm text-white">By submitting you agree we may contact you on WhatsApp / Email.</p>
       </form>
     </section>
   )

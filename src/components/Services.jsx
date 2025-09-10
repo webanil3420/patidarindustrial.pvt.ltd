@@ -44,7 +44,7 @@ export default function Services(){
   return (
     <section id="services" className="max-w-7xl mx-auto px-6 py-8">
       <h3 className="text-3xl font-bold mb-6 fade-up">Available Services</h3>
-      <p className="text-gray-600 mb-8 fade-up">We are a government approved vendor with proven track record. Below are the major services offered — click any card to view details.</p>
+      <p className="text-white mb-8 fade-up">We are a government approved vendor with proven track record. Below are the major services offered — click any card to view details.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {services.map((s,i)=>(

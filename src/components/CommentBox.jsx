@@ -10,12 +10,12 @@ export default function CommentBox(){
   }
   return (
     <section className="max-w-4xl mx-auto px-6 py-8">
-      <h4 className="text-xl font-bold mb-2 fade-up">Leave a Comment / Feedback</h4>
+      <h3 className="text-xl font-bold mb-2 fade-up tex">Leave a Comment / Feedback</h3>
       <form onSubmit={submit} className="flex gap-2">
         <input value={c} onChange={e=>setC(e.target.value)} placeholder="Write your comment..." className="flex-1 p-3 border rounded" />
         <button className="px-4 py-2 bg-amber-500 rounded text-white">Send</button>
       </form>
-      <p className="text-sm text-gray-500 mt-2">Comments will open WhatsApp chat with our helpline number for quick follow-up.</p>
+      <p className="text-sm text-white mt-2">Comments will open WhatsApp chat with our helpline number for quick follow-up.</p>
     </section>
   )
 }
