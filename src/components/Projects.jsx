@@ -27,7 +27,7 @@ export default function Projects(){
         {items.map((p,i)=>(
           <motion.div key={i} className="rounded overflow-hidden section-card card-hover fade-up"
             whileHover={{ scale: 1.02 }} initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}}>
-            <img src={p.img} className="w-full h-36 object-cover img-smooth" />
+            <img src={p.img} className="w-full h-60 object-cover img-smooth" />
             <div className="p-3">
               <h4 className="font-semibold">{p.title}</h4>
               <p className="text-sm text-[#000000] mt-2">{p.desc}</p>

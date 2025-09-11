@@ -25,13 +25,12 @@ export default function Gallery() {
     <section id="gallery" className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
       <h3 className="text-3xl font-bold mb-4">Gallery</h3>
       <p className="text-white mb-6">
-        Upload photos from site visits or projects — they will show instantly in the gallery preview (client-side only).
+        Upload photos from site visits or projects — they will show instantly in the gallery preview.
       </p>
 
       <div className="mb-4 flex flex-col sm:flex-row gap-3 items-start sm:items-center">
         <label htmlFor="gallery-upload" className="upload-btn cursor-pointer px-4 py-2 bg-blue-600 text-white rounded">Upload Files</label>
         <input id="gallery-upload" type="file" multiple onChange={handleUpload} className="hidden" />
-        <p className="text-sm text-white">Tip: Tap/click any image to view larger.</p>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">

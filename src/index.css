@@ -24,7 +24,7 @@
 }
 
 /* call button */
-.call-btn {
+/* .call-btn {
   position: fixed;
   left: 18px;
   bottom: 18px;
@@ -34,7 +34,7 @@
   border-radius: 999px;
   padding: 14px 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-}
+} */
 
 
 /* small utility */
@@ -164,7 +164,7 @@ body::before {
 
 
 /* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 
 * {
   font-family: 'Poppins', sans-serif;

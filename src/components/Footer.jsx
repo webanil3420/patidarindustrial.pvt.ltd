@@ -13,16 +13,16 @@ export default function Footer({ setShowDeveloper }) {
         </div>
 
         <div>
-          <h5 className="font-semibold text-white">Contact</h5>
+          <h3 className="font-semibold text-white">Contact</h3>
           <div className="text-sm text-gray-300 mt-2">
             <div>H.S. Katariya</div>
-            <div>Phone: <a href="tel:9329244777" className="text-indigo-600">9329244777</a></div>
+            <div>Phone: <a href="tel:9329244777" className="text-indigo-600">9329244777,</a></div>
             <div>Email: <a href="mailto:patidar041214@gmail.com" className="text-indigo-600">patidar041214@gmail.com</a></div>
           </div>
         </div>
 
         <div>
-          <h5 className="font-semibold text-white">Address</h5>
+          <h3 className="font-semibold text-white">Address</h3>
           <div className="text-sm text-gray-300 mt-2">
             F-104, Shree Ji Trade Centre, Shri Mangal Nagar, Bicholi Hapsi Road, Indore (M.P) 452016
           </div>
