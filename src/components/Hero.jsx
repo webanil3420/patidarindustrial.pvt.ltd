@@ -19,13 +19,13 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/45"></div>
 
       {/* Content */}
-      <div className="max-w-6xl mx-auto relative z-10 h-full flex flex-col justify-center items-start px-6">
+      <div className="max-w-6xl mx-auto relative z-10 h-full flex flex-col justify-center items-start px-6 text-justify">
         <motion.h2 
           initial={{ opacity: 0, x: -40 }} 
           whileInView={{ opacity: 1, x: 0 }} 
           transition={{ duration: 0.8 }} 
           className="text-4xl md:text-6xl font-extrabold text-white text-shadow leading-tight drop-shadow-lg"
-        >
+          >
           PATIDAR<br />Industrial Controls & Utilities
         </motion.h2>
         
@@ -34,8 +34,10 @@ export default function Hero() {
           whileInView={{ opacity: 1, x: 0 }} 
           transition={{ delay: 0.2, duration: 0.8 }} 
           className="mt-4 text-white/90 text-shadow max-w-xl"
-        >
-          Project, Planning, Operation & Maintenance of Electric HT/LT Substation, DG Sets, Electric M/c, Optical Fibre Network for Telecom, Solar Systems and Facility Managements.
+          >
+          <h2 className='text-[24px]'>   Multiple activity and services</h2>
+Project, Planning ,Execution , Operation & Maintenance (CAMC, AMC)  of  Electric HT/LT Substation, DG Sets, Electric M/c, Optical fibre  Network  for telecom, EPABX System, Solar system, CCTV,  UPS , Battery Bank , Fire alarm system, Air Conditioners, System Networking, Electric Audit, All infrastructures management  of Industrial & Telecomm , Facility managements and Consulting chartered Engineers.
+
         </motion.p>
 
         <motion.div 
@@ -47,7 +49,7 @@ export default function Hero() {
           <a href="#services" className="px-5 py-3 bg-gradient-to-r from-indigo-600 to-green-500 rounded text-white text-shadow shadow hover:scale-105 transition">
             Our Services
           </a>
-          <a href="#contact" className="px-5 py-3 bg-white rounded text-indigo-700 shadow hover:scale-105 transition">
+          <a href="#F" className="px-5 py-3 bg-white rounded text-indigo-700 shadow hover:scale-105 transition">
             Contact Us
           </a>
         </motion.div>

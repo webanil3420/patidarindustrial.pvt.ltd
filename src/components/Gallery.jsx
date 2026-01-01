@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Gallery() {
   const [images, setImages] = useState([
-    '/assets/gallery1.jpg',
+
     '/assets/gallery2.jpg',
+     '/assets/solar1.jpg',
     '/assets/gallery3.jpg',
     '/assets/hero.jpg'
   ])

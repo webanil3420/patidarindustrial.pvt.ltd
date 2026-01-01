@@ -4,17 +4,17 @@ import { motion } from 'framer-motion'
 const items = [
   {
     title: 'HS Katariya - Solar / Electrical',
-    desc: 'Installed rooftop solar system at 87 Revenue Nagar, Indore. Full EPC execution, commissioning, testing and handover. Capacity: 150 kW.',
+    desc: 'Installed rooftop solar system at - 87 Revenue Nagar, Indore. Full EPC execution, commissioning, testing and handover. Capacity: 3 kW.',
     img: '/assets/solar1.jpg'
   },
   {
     title: 'Anil Patidar - Shri Ram Auto Parts',
-    desc: 'Installed ground-mounted solar power plant for Shri Ram Auto Parts. Full EPC execution, commissioning, testing and handover. Capacity: 300 kW.',
+    desc: 'Installed ground-mounted solar power plant for Shri Ram Auto Parts. Full EPC execution, commissioning, testing and handover. Capacity: 5 kW.',
     img: '/assets/solar2.jpg'
   },
   {
     title: 'Sunil Patidar - Solar / Electrical',
-    desc: 'Installed rooftop solar system at 184 A Chetan Nagar. Full EPC execution, commissioning, testing and handover. Capacity: 220 kW.',
+    desc: 'Installed rooftop solar system at 184 A Chetan Nagar. Full EPC execution, commissioning, testing and handover. Capacity: 3 kW.',
     img: '/assets/solar3.jpg'
   }
 ]

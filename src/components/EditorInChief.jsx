@@ -5,14 +5,9 @@ const EditorInChief = () => {
     <div className="bg-[#2a3064] min-h-fit p-6 md:p-10 text-white rounded-lg shadow-lg">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-center md:justify-start mb-6 text-center md:text-left">
-        <h2 className="text-2xl md:text-3xl font-bold">Founder & Owner</h2>
+        <h2 className="text-2xl md:text-3xl font-bold">Founder</h2>
         <span className="hidden md:inline mx-4 text-white">|</span>
-        <a
-          href="#"
-          className="text-blue-300 hover:underline mt-2 md:mt-0"
-        >
-          View full leadership team
-        </a>
+       
       </div>
 
       {/* Profile Section */}
@@ -28,9 +23,9 @@ const EditorInChief = () => {
 
         {/* Info */}
         <div className="mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
-          <h2 className="text-xl md:text-2xl font-semibold">HS Katariya</h2>
-          <p className="text-gray-300">Founder & Owner, Patidar Industrial Controls and Utilities Pvt Ltd</p>
-          <p className="text-gray-300">Indore, MP</p>
+          <h2 className="text-xl md:text-2xl font-semibold">H.S. KATARIYA</h2>
+          <p className="text-gray-300">Founder of Patidar Industrial Controls and Utilities , Indore (M.P.)</p>
+      
 
           {/* Work / Skills */}
           <ul className="mt-3 space-y-1 text-gray-200">
