@@ -28,7 +28,9 @@ export default function Hero() {
           >
           PATIDAR<br />Industrial Controls & Utilities
         </motion.h2>
-        
+           <div className="text-lg font-bold !text-[#00ffd0]">
+  (Govt 'A' Class Electrical Contractor)
+</div>
         <motion.p 
           initial={{ opacity: 0, x: -20 }} 
           whileInView={{ opacity: 1, x: 0 }} 
